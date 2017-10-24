@@ -1,0 +1,69 @@
+<configuration>
+    <property>
+        <name>hive.zookeeper.quorum</name>
+        <value>localhost:2181</value>
+    </property>
+    <property>
+        <name>spark.sql.warehouse.dir</name>
+        <value>hdfs://master66:8020/user/hive/warehouse</value>
+    </property>
+    <property>
+        <name>hive.metastore.local</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://master66:3306/hivedb</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>hive</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>pass12345+</value>
+    </property>
+
+    <property>
+        <name>hive.optimize.sort.dynamic.partition</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>hive.support.concurrency</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hive.enforce.bucketing</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hive.exec.dynamic.partition.mode</name>
+        <value>nonstrict</value>
+    </property>
+    <property>
+        <name>hive.txn.manager</name>
+        <value>org.apache.hadoop.hive.ql.lockmgr.DbTxnManager</value>
+    </property>
+    <property>
+        <name>hive.compactor.initiator.on</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>hive.compactor.worker.threads</name>
+        <value>1</value>
+    </property>
+    <property>
+        <name>hive.in.test</name>
+        <value>true</value>
+    </property>
+
+
+</configuration>
